@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai14</title>
+</head>
+
+<body>
+    <!-- TinhTong3 -->
+    <script>
+        let N = +prompt("Nhập số nguyên N:");
+        let M = +prompt("Nhập số nguyên M:");
+        if (0 <= N && N <= 12345670 && 0 <= M && M <= 12345670) {
+            let result = (N % 10) + (M % 10);
+            console.log(result);
+        } else {
+            console.log("Nhập lại:");
+        }
+    </script>
+</body>
+
+</html>

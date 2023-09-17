@@ -1,0 +1,5 @@
+table,tr,td{
+    border: 1px solid green;
+    text-align: center;
+    background-color: aliceblue;
+}

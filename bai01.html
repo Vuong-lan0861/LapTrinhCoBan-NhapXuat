@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title tag -->
+    <title>bai1</title>
+    <!-- Link css custom -->
+    <link rel="stylesheet" href="./css/bai1.css">
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Nhập tên bạn:
+                    <input id="inputValue" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="myFunction()">Xuất câu chào</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let name = document.getElementById("inputValue");
+        function myFunction() {
+            alert("Chào bạn "+name.value);  
+        }
+    </script>
+</body>
+
+</html>

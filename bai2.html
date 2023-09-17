@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <!-- Link custom -->
+    <link rel="stylesheet" href="./css/bai2.css">
+</head>
+
+<body>
+    <!-- Nhập xuất cơ bản 1 -->
+    <script>
+        let number = +prompt("nhập số nguyên dương có ba chữ số abc:");
+        if (number > 99 && number < 1000) {
+            // Chia lấy dư 
+            let c = number % 10;
+            // làm tròn một số thập phân (float) xuống số nguyên gần nhất không lớn hơn
+            let b = Math.floor((number % 100) / 10);
+            let a = Math.floor(number / 100);
+            alert(c + "\n" + b + "\n" + c);
+        } else {
+            alert("Nhập lại số");
+        }
+    </script>
+</body>
+
+</html>

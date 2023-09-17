@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+
+<body>
+    <!-- DAONGUOC -->
+    <script>
+        let number = +prompt("Nhập số có ba chữ số");
+        if (number > 99 && number < 1000) {
+            let a = number % 10;
+            let b = Math.floor((number % 100) / 10);
+            let c = Math.floor(number / 100);
+            console.log(c , b , a);
+        } else {
+            console.log("nhap lai");
+        }
+    </script>
+</body>
+
+</html>

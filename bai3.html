@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai3</title>
+    <!-- link custom -->
+    <link rel="stylesheet" href="./css/bai3.css">
+</head>
+
+<body>
+    <!-- NHAPXUAT2-->
+    <table>
+        <tr>
+            <td>
+                Nhập vào số a
+                <input type="text" id="inputValueA">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nhập vào số b
+                <input type="text" id="inputValueB">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="doiCho()">Đổi chỗ</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function doiCho() {
+            let a = document.getElementById("inputValueA").value;
+            let b = document.getElementById("inputValueB").value;
+            let temp = a;
+            a = b;
+            b = temp;
+            console.log(a,b);
+        }
+
+    </script>
+</body>
+
+</html>
